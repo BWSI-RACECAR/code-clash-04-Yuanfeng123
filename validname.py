@@ -29,11 +29,13 @@ class Solution:
         # return: bool
             
         # TODO: Write code below to return a bool with the solution to the prompt
-        for i in range(len(input)):
-            for j in range(i+1, len(input)):
-                if input[i] == input[j]:
-                    return False
-        return True
+        # for i in range(len(input)):
+        #     for j in range(i+1, len(input)):
+        #         if input[i] == input[j]:
+        #             return False
+        # return True
+        t = set(input)
+        return len(t)==len(input)
 
 def main():
     string1 = input()
