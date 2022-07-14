@@ -34,8 +34,7 @@ class Solution:
         #         if input[i] == input[j]:
         #             return False
         # return True
-        t = set(input)
-        return len(t)==len(input)
+        return len(set(input))==len(input)
 
 def main():
     string1 = input()
